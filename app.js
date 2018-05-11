@@ -16,10 +16,10 @@ let QuestionMarks = function(str) {
       if (!isNaN(num)) {
         let sum = prev + num;
         if (sum === 10) {
-          if (count !== 3) {
-            return false;
-          } else {
+          if (count === 3) {
             pass = true;
+          } else {
+            return false;
           }
         }
         count = 0;
