@@ -13,7 +13,7 @@ let QuestionMarks = function(str) {
       count++;
     } else {
       let num = +char;
-      if (!isNaN(num)) {
+      if (num===num) {
         let sum = prev + num;
         if (sum === 10) {
           if (count === 3) {
