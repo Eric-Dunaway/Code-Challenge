@@ -12,7 +12,7 @@ let QuestionMarks = function(str) {
     if (char === "?") {
       count++;
     } else {
-      let num = parseInt(char, 10);
+      let num = +char;
       if (!isNaN(num)) {
         let sum = prev + num;
         if (sum === 10) {
